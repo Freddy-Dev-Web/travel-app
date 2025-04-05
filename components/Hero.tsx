@@ -58,6 +58,30 @@ const Hero = () => {
                 />
             </div>
         </div>
+
+        <div className="relative flex flex-1 items-start">
+            <div className="relative z-20  flex w-[268px] gap-6 px-7 py-8 rounded-3xl flex-col bg-gray-700 ">
+                <div className="flex flex-col">
+                    <div className="flex items-center justify-between">
+                        <p className="text-[16px] font-[400] text-gray-20">Location</p>
+                        <Image src="/close.svg" alt="close" width={24} height={24}/>
+                    </div>
+                    <p className="bold-20 text-[20px] text-white">Agues Calientes</p>
+                </div>
+
+                 <div className="flex items-center justify-between">
+                    <div className="flex flex-col">
+                        <p className="text-[16px] font-[400] block text-gray-20">Distance</p>
+                        <p className="bold-20 text-white">173.28 mi</p>
+                    </div>
+
+                    <div className="flex flex-col">
+                        <p className="text-[16px] font-[400] block text-gray-20">Elevation</p>
+                        <p className="bold-20 text-white">2.040 km</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
   )
 }
