@@ -8,7 +8,7 @@ interface CampProps {
 
 const CampSite = ( {backgroundImage, title, subtitle, peopleJoined}: CampProps) => {
   return (
-    <div className={`h-full w-full min-w-[1100px] ${backgroundImage}`}>
+    <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
       Camp Site 1
     </div>
   )
@@ -23,9 +23,11 @@ const Camp = () => {
         backgroundImage="bg-bg-img-1"
         title="Putuk Truno Camp"
         subtitle="Prigen, Pasuruan"
-        peopleJoined=""
+        peopleJoined="50+ Joined"
         />
-        <CampSite />
+        <CampSite 
+
+        />
       </div>
     </section>
   )
