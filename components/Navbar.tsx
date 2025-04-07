@@ -5,7 +5,7 @@ import Button from "./Button"
 
 const Navbar = () => {
   return (
-    <nav className=" flex items-center justify-between mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 relative z-30 py-5">
+    <nav className="flex items-center justify-between mx-auto max-w-[1440px] px-6 lg:px-20 3xl:px-0 relative z-30 py-5">
         <Link href="/">
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
 
@@ -23,6 +23,7 @@ const Navbar = () => {
           <Button
           type="button"
           title="login"
+
           icon="/user.svg"
           variant="bg-gray-900 px-8 py-4 text-white transition-all hover:bg-black" 
           />
