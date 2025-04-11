@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PEOPLE_URL } from "../constants";
+import { PEOPLE_URL } from "../constants/index";
 
 interface CampProps {
   backgroundImage:string;
@@ -50,7 +50,7 @@ const CampSite = ( {backgroundImage, title, subtitle, peopleJoined}: CampProps) 
 
 const Camp = () => {
   return (
-    <section className=" 2xl:mx-auto 2xl:max-w-[1440px] relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20">
+    <section className=" 2xl:mx-auto 2xl:max-w-[1440px] relative flex flex-col px-6 lg:px-20 py-10 lg:mb-10 lg:py-20 xl:mb-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
         <CampSite 
         backgroundImage="bg-[url('/img-1.png')]"
@@ -71,7 +71,7 @@ const Camp = () => {
             <h2 className="text-[24px] font-[400] md:text-[32px] md:font-[400] 2xl:text-[64px] 2xl:font-[400] 2xl:leading-[120%] capitalize text-white">
               <strong>Feeling Lost</strong> And Not Knowing The Way?
             </h2>
-            <p className="text-[14px] font-[400] xl:text-[16px] xl:font-[400] mt:5 text-white">
+            <p className="text-[14px] font-[400] xl:text-[16px] xl:font-[400] mt:5 text-gray-300">
             Starting from the anxiety of the climbers when visiting a new climbing location, the possibility of getting lost is very large. Thats why we are here for those of you who want to start an adventure
             </p>
             <Image
@@ -83,6 +83,7 @@ const Camp = () => {
             />
         </div>
       </div>
+
     </section>
   )
 }
